@@ -66,6 +66,10 @@ def mobile():
 def download():
     return render_template('datadownload.html', version=app.config['VERSION'])
 
+@app.route('/documents')
+def documents():
+    return render_template('documents.html', version=app.config['VERSION'])
+
 @app.errorhandler(404)
 @cache(0)
 def not_found(e):

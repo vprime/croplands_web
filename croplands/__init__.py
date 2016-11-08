@@ -62,6 +62,13 @@ def s3_proxy(path=None):
 def mobile():
     return render_template('mobile.html', version=app.config['VERSION'])
 
+
+@app.route('/test')
+def test():
+    return render_template('test.html', version=app.config['VERSION'])
+
+
+
 @app.errorhandler(404)
 @cache(0)
 def not_found(e):

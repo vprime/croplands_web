@@ -12,7 +12,7 @@ documenting cropland dynamics from 1990 to 2017. [USGS](http://geography.wr.usgs
 This is a [web application](https://croplands.org) for visualizing and interacting with the training and validation
 data. The application lives on an Amazon S3 bucket with a Cloudfront layer in front of the bucket.
 
-The web application was originally created by [github.com/justinwp](Justin Poehnelt).
+The web application was originally created by [Justin Poehnelt](https://github.com/justinwp).
 See the companion api at [github.com/justinwp/croplands](https://github.com/justinwp/croplands)
 
 ### Docker Run Command

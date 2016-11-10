@@ -19,9 +19,10 @@ in September 2016.  Currently, the project is handled by [Corryn Smith](https://
 
 ###Contribute to the Project###
 You can contribute to the project in two ways.
->>1.) Feel free to download our source code.  This is an open source project, so always feel free to submit a pull request
+
+*1.) Feel free to download our source code.  This is an open source project, so always feel free to submit a pull request
 if you have any suggestions.
->>2.) Not into coding? You can download the [mobile app](https://croplands.org/mobile) and collect cropland data in your
+*2.) Not into coding? You can download the [mobile app](https://croplands.org/mobile) and collect cropland data in your
 area!
 
 ###Other###

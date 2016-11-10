@@ -162,20 +162,20 @@ module.exports = function (grunt) {
             }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-sloc');
-    grunt.loadNpmTasks('grunt-karma');
-    grunt.loadNpmTasks("grunt-coveralls");
-//    grunt.loadNpmTasks('grunt-replace');
-    grunt.loadNpmTasks('grunt-aws');
+//     grunt.loadNpmTasks('grunt-contrib-less');
+//     grunt.loadNpmTasks('grunt-contrib-watch');
+        grunt.loadNpmTasks('grunt-contrib-concat');
+        grunt.loadNpmTasks('grunt-contrib-uglify');
+//     grunt.loadNpmTasks('grunt-contrib-copy');
+//     grunt.loadNpmTasks('grunt-sloc');
+//     grunt.loadNpmTasks('grunt-karma');
+//     grunt.loadNpmTasks("grunt-coveralls");
+// //    grunt.loadNpmTasks('grunt-replace');
+//     grunt.loadNpmTasks('grunt-aws');
 //    grunt.loadNpmTasks('grunt-invalidate-cloudfront');
 
 // Default task.
-    grunt.registerTask('default', ['concat', 'uglify', 'less', 'sloc', 'copy', 'replace', 'invalidate_cloudfront']);
+    grunt.registerTask('default', ['concat','uglify']);
 
 }
 ;

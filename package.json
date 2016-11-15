@@ -1,11 +1,11 @@
 {
   "title": "Global Croplands",
-  "homepage": "http://www.Croplands.org",
+  "homepage": "http://Croplands.org",
   "author": {
     "name": "Justin Poehnelt",
-    "email": "jpoehnelt@usgs.gov"
+    "email": "cropland.dev@gmail.com"
   },
-  "version": "3.7.1t",
+  "version": "3.7.2t",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-aws": "^0.4.0",

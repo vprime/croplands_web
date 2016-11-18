@@ -1323,7 +1323,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Croplands, Rainfed minor fragments', color: '#00FFFF'},
                         {label: 'Croplands, Rainfed very minor fragments', color: '#D2B58C'}
                     ],
-                    attribution: '<a href="http://geography.wr.usgs.gov/science/app/docs/Global-cropland-extent-V10-teluguntla-thenkabail-xiong.pdf">Teluguntla et al., 2015</a>',
+                    attribution: '<a href="http://geography.wr.usgs.gov/science/croplands/docs/Teluguntla-thenkabail-xiong-etal-global-croplands-mask.pdf">Teluguntla et al., 2015</a>',
                 },
                 Global_1000m_L4_v20120101: {
                     name: 'Global GCE 1km Cropland Dominance and Other Products',

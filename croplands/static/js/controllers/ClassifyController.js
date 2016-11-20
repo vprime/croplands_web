@@ -257,6 +257,7 @@ app.controller("ClassifyController", ['$scope', 'mapService', 'mappings', '$http
     });
 
     $scope.showValidation = function () {
+        return true;
         return $scope.role === 'admin' || $scope.role === 'validation';
     };
 

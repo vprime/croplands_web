@@ -1497,7 +1497,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
 
                 },
                 Africa_30m_L1_v20161110: {
-                    name: 'Africa 30m Cropland Extent Product 2014',
+                    name: 'Africa 30m Cropland Extent Product 2015',
                     visible: true,
                     type: 'xyz',
                     params: {

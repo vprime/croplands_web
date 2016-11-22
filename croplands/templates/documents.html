@@ -8,16 +8,53 @@
     </h1></center>
     <div class="container">
         <div class="row">
-            <div class="col-sm-8">
-                <h3 style="font-family: Tahoma; padding-top: 50px;">Helpful Documents and Publications</h3>
-                <p class="lead"><a href="https://d2bol3etyblasz.cloudfront.net/docs/Croplands-definitions-1d.pdf">
-                    Croplands Data Definitions</a></p>
-                <p class="lead"> <a href="http://geography.wr.usgs.gov/science/croplands/docs/Teluguntla-thenkabail-xiong-etal-global-croplands-mask.pdf">Current Achievements and Future Possibilities</a>
-                <p class="lead"><a href="http://geography.wr.usgs.gov/science/croplands/pubs2014.html">Additional Publications</a> </p>
-{#                <p class="lead">More Papers Coming Soon</p>#}
+                <h3 style="font-family: Tahoma; padding-top: 10px;"><center>Helpful Documents and Publications</center></h3>
+                <table style="width:100%">
+                            <tr>
+                                <th>Title</th>
+{#                                <th>Authors</th>#}
+{#                                <th>Year</th>#}
+                                <th>Document Link</th>
+                                </tr>
+                            <tr>
+                                <td>Croplands Data Definitions</td>
+                                <td><a href="https://d2bol3etyblasz.cloudfront.net/docs/Croplands-definitions-1d.pdf">PDF</a></td>
+                            </tr>
+                            <tr>
+                                <td>Current Achievements and Future Possibilities</td>
+                                <td><a href="http://geography.wr.usgs.gov/science/croplands/docs/Teluguntla-thenkabail-xiong-etal-global-croplands-mask.pdf">PDF</a></td>
+                            </tr>
+                            <tr>
+                                <td>Additional Publications</td>
+                                <td><a href="http://geography.wr.usgs.gov/science/croplands/pubs2014.html">Go to GFSAD30 USGS Site</a></td>
+                            </tr>
+                </table>
 
 
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    background-color: #237c28;
+    border-color: #1c6220;
+    color: white;
+}
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 {% endblock %}
 {% block scripts_footer %}
 {% endblock %}
+

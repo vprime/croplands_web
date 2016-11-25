@@ -1439,8 +1439,8 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Cropland', color: '#00FF00'}
                     ]
                 },
-                Australia_30m_L1_v20160601: {
-                    name: 'Australia 30m Cropland Extent Product 2014',
+                Australia_30m_L1_v20161125: {
+                    name: 'Australia 30m Cropland Extent Product 2015',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1449,11 +1449,11 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             bounds: L.latLngBounds(L.latLng(-9.83464522447101, 110.000125), L.latLng(-45.00754522447101, 158.961625))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/JustinPoehnelt/products&id=Australia_30m_L1_v20160601&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Australia_30m_L1_v20161125&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#FFFF00'},
-                        {label: 'Pasture', color: '#66FFFF'}
+                        // {label: 'Pasture', color: '#66FFFF'}
                     ]
                 },
                 Australia_250m_L3_v20160701: {

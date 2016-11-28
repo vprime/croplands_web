@@ -190,7 +190,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     },
                     legend: [
                         {label: 'Croplands', color: '#FFFF00'},
-                        // {label: 'Pasture', color: '#66FFFF'}
+                        {label: 'Pasture', color: '#66FFFF'}
                     ]
                 },
                 Australia_250m_L3_v20160701: {

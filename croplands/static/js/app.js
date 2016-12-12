@@ -1512,6 +1512,22 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Croplands', color: '#00FF00'}
                     ]
                 },
+                Mexico_CentralAmerica_30m_L1_v20161212: {
+                    name: 'Mexico and Central America 30m Cropland Extent Product 2010',
+                    visible: true,
+                    type: 'xyz',
+                    params: {
+                        options: {
+                            band: 'class',
+                            subdomains: 'abc',
+                            bounds: L.latLngBounds(L.latLng(33.682697, -121.603351), L.latLng(6.112637, -53.773761))
+                        },
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&band={band}&id=Mexico_30m_L1_v20161212'
+                    },
+                    legend: [
+                        {label: 'Croplands', color: '#00FF00'}
+                    ]
+                },
                 Africa_250m_L2_v20160601: {
                     name: 'Africa GCE 250m Cropland Products 2003 to 2014 from ACCA',
                     visible: false,

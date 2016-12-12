@@ -250,7 +250,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 Mexico_CentralAmerica_30m_L1_v20161212: {
-                    name: 'Mexico and Central America 30m Cropland Extent Product 2010',
+                    name: 'Mexico, Central America and the Caribbean 30m Cropland Extent Product Nominal 2010',
                     visible: true,
                     type: 'xyz',
                     params: {

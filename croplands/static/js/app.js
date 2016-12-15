@@ -1530,7 +1530,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                 },
                 Canada_30m_L1_v20161215: {
                     name: 'Canada 30m Cropland Extent Product Nominal 2010',
-                    visible: true,
+                    visible: false,
                     type: 'xyz',
                     params: {
                         options: {

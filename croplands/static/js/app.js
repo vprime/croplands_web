@@ -1351,7 +1351,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                 },
                 SouthAsia_250m_L4_v20151201: {
                     name: 'South Asia 250m Croplands 2010-2011 from ACCA',
-                    visible: true,
+                    visible: false,
                     type: 'xyz',
                     params: {
                         options: {
@@ -1383,6 +1383,22 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: "Rainfed-SC-mixedcrops/Plantations", color: "#bd5e4d"},
                         {label: "Shrublands/trees/Rainfed-mixedcrops30%", color: "#a020f0"},
                         {label: "Other LULC", color: "#c0c0c0"}
+                    ]
+                },
+                SouthAsia_30m_L1_v20161215: {
+                    name: 'South Asia 30m Cropland Extent Product YEAR',
+                    visible: true,
+                    type: 'xyz',
+                    params: {
+                        options: {
+                            band: 'class',
+                            subdomains: 'abc',
+                            bounds: L.latLngBounds(L.latLng(37.0985, 60.895), L.latLng(6.006, 97.416))
+                        },
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&band={band}&id=South_Asia_30m_extent_v20161215'
+                    },
+                    legend: [
+                        {label: 'Croplands', color: '#00FF00'}
                     ]
                 },
                 UnitedStates_250m_L5_v20160101: {

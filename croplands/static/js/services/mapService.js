@@ -273,7 +273,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         options: {
                             band: 'class',
                             subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(33.682697, -121.603351), L.latLng(6.112637, -53.773761))
+                            bounds: L.latLngBounds(L.latLng(69.330539, -141.346028), L.latLng(37.397656, -70.066737))
                         },
                         url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&band={band}&id=Canada_30m_L1_v20161215'
                     },

@@ -123,7 +123,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 SouthAsia_30m_L1_v20161215: {
-                    name: 'South Asia 30m Cropland Extent Product YEAR',
+                    name: 'South Asia 30m Cropland Extent Product 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -132,7 +132,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             bounds: L.latLngBounds(L.latLng(37.0985, 60.895), L.latLng(6.006, 97.416))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&band={band}&id=South_Asia_30m_extent_v20161215'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&band={band}&id=South_Asia_30m_L1_v20161216'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}

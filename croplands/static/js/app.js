@@ -1424,7 +1424,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 SouthAmerica_30m_L1_v20160101: {
-                    name: 'South America 30m Cropland Extent Product 2014',
+                    name: 'South America 30m Cropland Extent Product 2013-2016',
                     visible: true,
                     type: 'xyz',
                     params: {

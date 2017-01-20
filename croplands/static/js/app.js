@@ -1576,6 +1576,22 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                 //         {label: 'Croplands', color: '#00FF00'}
                 //     ]
                 // },
+                China_30m_L1_v20170119: {
+                    name: 'China 30m Cropland Extent Product Nominal 2014',
+                    visible: true,
+                    type: 'xyz',
+                    params: {
+                        options: {
+                            band: 'class',
+                            subdomains: 'abc',
+                            bounds: L.latLngBounds(L.latLng(59.394912, 62.978564), L.latLng(11.340300, 141.640666))
+                        },
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=China_30m_L1_v20170119&band={band}'
+                    },
+                    legend: [
+                        {label: 'Croplands', color: '#00FF00'}
+                    ]
+                },
                 Africa_250m_L2_v20160601: {
                     name: 'Africa GCE 250m Cropland Products 2003 to 2014 from ACCA',
                     visible: false,

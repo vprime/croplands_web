@@ -62,9 +62,9 @@ def s3_proxy(path=None):
 def mobile():
     return render_template('mobile.html', version=app.config['VERSION'])
 
-@app.route('/download')
+@app.route('/downloadLPDAAC')
 def download():
-    return render_template('datadownload.html', version=app.config['VERSION'])
+    return render_template('datadownloadLPDAAC.html', version=app.config['VERSION'])
 
 @app.route('/documents')
 def documents():

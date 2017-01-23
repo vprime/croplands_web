@@ -329,6 +329,38 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Croplands', color: '#00FF00'}
                     ]
                 },
+                MidEast_30m_L1_v20170121: {
+                    name: 'Middle East 30m Cropland Extent Product Nominal 2014',
+                    visible: true,
+                    type: 'xyz',
+                    params: {
+                        options: {
+                            band: 'class',
+                            subdomains: 'abc',
+                            bounds: L.latLngBounds(L.latLng(43.189358, 24.130906), L.latLng(8.744208, 72.558633))
+                        },
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=MidEast_30m_L1_v20170122&band={band}'
+                    },
+                    legend: [
+                        {label: 'Croplands', color: '#000000'}
+                    ]
+                },
+                NewZealand_30m_L1_v20170123: {
+                    name: 'New Zealand 30m Cropland Extent Product Nominal 2014',
+                    visible: true,
+                    type: 'xyz',
+                    params: {
+                        options: {
+                            band: 'class',
+                            subdomains: 'abc',
+                            bounds: L.latLngBounds(L.latLng(-30.958247, 156.614491), L.latLng(-51.984505, -165.153094))
+                        },
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=NewZealand_30m_L1_v20170123&band={band}'
+                    },
+                    legend: [
+                        {label: 'Croplands', color: '#00FF00'}
+                    ]
+                },
                 Africa_250m_L2_v20160601: {
                     name: 'Africa GCE 250m Cropland Products 2003 to 2014 from ACCA',
                     visible: false,

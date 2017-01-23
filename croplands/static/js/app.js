@@ -1602,7 +1602,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             bounds: L.latLngBounds(L.latLng(43.189358, 24.130906), L.latLng(8.744208, 72.558633))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=MidEast_30m_L1_v20170122&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=MidEash_30m_L1_v20170123&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#000000'}

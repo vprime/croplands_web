@@ -209,16 +209,16 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 Australia_30m_L1_v20161125: {
-                    name: 'Australia 30m Cropland Extent Product 2015',
+                    name: 'Australia & New Zealand 30m Cropland Extent Nominal 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
                         options: {
                             band: 'class',
                             subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(-9.83464522447101, 110.000125), L.latLng(-45.00754522447101, 158.961625))
+                            //bounds: L.latLngBounds(L.latLng(-9.83464522447101, 110.000125), L.latLng(-45.00754522447101, 158.961625))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Australia_30m_L1_v20161202v3&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=AustNewZeal_30m_20170123&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'},
@@ -343,22 +343,6 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     },
                     legend: [
                         {label: 'Croplands', color: '#000000'}
-                    ]
-                },
-                NewZealand_30m_L1_v20170123: {
-                    name: 'New Zealand 30m Cropland Extent Product Nominal 2014',
-                    visible: true,
-                    type: 'xyz',
-                    params: {
-                        options: {
-                            band: 'class',
-                            subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(-30.958247, 156.614491), L.latLng(-51.984505, -165.153094))
-                        },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=NewZealand_30m_L1_v20170123&band={band}'
-                    },
-                    legend: [
-                        {label: 'Croplands', color: '#00FF00'}
                     ]
                 },
                 Africa_250m_L2_v20160601: {

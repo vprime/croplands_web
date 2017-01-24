@@ -250,7 +250,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     years: [2000,2001,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,2015]
                 },
                 Europe_30m_L1_v20160725: {
-                    name: 'Europe 30m Cropland Extent Product 2014',
+                    name: 'Europe, Russia, Central Asia, and Middle East 30m Cropland Extent Product 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -258,7 +258,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             band: 'class',
                             subdomains: 'abc'
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/JustinPoehnelt/products&id=Europe_30m_L1_v20160725&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Europe_30m_L1_v20170124&band={band}'
                     },
                     legend: [
                         {label: 'Cropland', color: '#00FF00'}
@@ -327,22 +327,6 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}
-                    ]
-                },
-                MidEast_30m_L1_v20170121: {
-                    name: 'Middle East 30m Cropland Extent Product Nominal 2014',
-                    visible: true,
-                    type: 'xyz',
-                    params: {
-                        options: {
-                            band: 'class',
-                            subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(43.189358, 24.130906), L.latLng(8.744208, 72.558633))
-                        },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=MidEash_30m_L1_v20170123&band={band}'
-                    },
-                    legend: [
-                        {label: 'Croplands', color: '#000000'}
                     ]
                 },
                 Africa_250m_L2_v20160601: {

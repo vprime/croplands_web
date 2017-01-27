@@ -1324,6 +1324,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Croplands, Rainfed very minor fragments', color: '#D2B58C'}
                     ],
                     attribution: '<a href="http://geography.wr.usgs.gov/science/croplands/docs/Teluguntla-thenkabail-xiong-etal-global-croplands-mask.pdf">Teluguntla et al., 2015</a>',
+                    // '<p><a href="http://e4ftl01.cr.usgs.gov/provisional/MEaSUREs/GFSAD/GFSADCM1KM/02-data/">Download Data on LPDAAC</a></p>',
                 },
                 Global_1000m_L4_v20120101: {
                     name: 'Global GCE 1km Cropland Dominance and Other Products',
@@ -1347,7 +1348,8 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Minor Fractions of Mixed Crops: Wheat, Maize, Rice, Barley, Soybeans', color: '#505012'},
                         {label: 'Other Classes', color: '#B2B2B2'}
                     ],
-                    attribution: '<a href="https://powellcenter.usgs.gov/globalcroplandwater/sites/default/files/August%20HLA-final-1q-high-res.pdf">Thenkabail et al., 2012</a>',
+                    attribution: '<a href="https://geography.wr.usgs.gov/science/croplands/docs/02-GLOBAL-CROPLANDS-PAPER-PE&RS-Special-Issue-thenkabail-2012-Final.pdf">Thenkabail et al., 2012</a>',
+                    // '<p><a href="http://e4ftl01.cr.usgs.gov/provisional/MEaSUREs/GFSAD/GFSADCD1KM/02-data/">Download Data on LPDAAC</a></p>',
                 },
                 SouthAsia_250m_L4_v20151201: {
                     name: 'South Asia 250m Croplands 2010-2011 from ACCA',
@@ -1510,7 +1512,8 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Croplands, irrigated, continuous, orchards ', color: '#00B050'},
                         {label: 'Croplands,  fallow ', color: '#FBD4B4'}
                     ],
-                    years: [2000,2001,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,2015]
+                    years: [2000,2001,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,2015],
+                    attribution: '<a href="http://dx.doi.org/10.1080/17538947.2016.1267269">Teluguntla et al., 2017</a>'
                 },
                 Europe_30m_L1_v20160725: {
                     name: 'Europe, Russia, Central Asia, and Middle East 30m Cropland Extent Product 2014',

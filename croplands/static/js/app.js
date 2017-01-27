@@ -1617,7 +1617,8 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Rainfed, Continuous', color: '#ffff33'},
                         {label: 'Fallow-lands', color: '#e2e2e2'},
                         {label: 'Not Cropland', color: '#000000'}
-                    ]
+                    ],
+                    attribution: '<a href="https://geography.wr.usgs.gov/science/croplands/docs/Xiong-ACM2016.pdf">Xiong, J. et al., 2017</a>'
                 }
             }
         }

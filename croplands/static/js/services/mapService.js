@@ -132,7 +132,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         options: {
                             band: 'class',
                             subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(37.0985, 60.895), L.latLng(6.006, 97.416))
+                            //bounds: L.latLngBounds(L.latLng(37.0985, 60.895), L.latLng(6.006, 97.416))
                         },
                         url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthAsia_30m_L1_v20170202&band={band}'
                     },

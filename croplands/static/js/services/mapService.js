@@ -61,6 +61,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Croplands, Rainfed very minor fragments', color: '#D2B58C'}
                     ],
                     attribution: '<a href="http://geography.wr.usgs.gov/science/croplands/docs/Teluguntla-thenkabail-xiong-etal-global-croplands-mask.pdf">Teluguntla et al., 2015</a>',
+                    // '<p><a href="http://e4ftl01.cr.usgs.gov/provisional/MEaSUREs/GFSAD/GFSADCM1KM/02-data/">Download Data on LPDAAC</a></p>',
                 },
                 Global_1000m_L4_v20120101: {
                     name: 'Global GCE 1km Cropland Dominance and Other Products',
@@ -84,7 +85,8 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Minor Fractions of Mixed Crops: Wheat, Maize, Rice, Barley, Soybeans', color: '#505012'},
                         {label: 'Other Classes', color: '#B2B2B2'}
                     ],
-                    attribution: '<a href="https://powellcenter.usgs.gov/globalcroplandwater/sites/default/files/August%20HLA-final-1q-high-res.pdf">Thenkabail et al., 2012</a>',
+                    attribution: '<a href="https://geography.wr.usgs.gov/science/croplands/docs/02-GLOBAL-CROPLANDS-PAPER-PE&RS-Special-Issue-thenkabail-2012-Final.pdf">Thenkabail et al., 2012</a>',
+                    // '<p><a href="http://e4ftl01.cr.usgs.gov/provisional/MEaSUREs/GFSAD/GFSADCD1KM/02-data/">Download Data on LPDAAC</a></p>',
                 },
                 SouthAsia_250m_L4_v20151201: {
                     name: 'South Asia 250m Croplands 2010-2011 from ACCA',
@@ -130,9 +132,9 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         options: {
                             band: 'class',
                             subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(37.0985, 60.895), L.latLng(6.006, 97.416))
+                            //bounds: L.latLngBounds(L.latLng(37.0985, 60.895), L.latLng(6.006, 97.416))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthAsia_30m_L1_v20170118&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthAsia_30m_L1_v20170202&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}
@@ -146,9 +148,9 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         options: {
                             band: 'class',
                             subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(69.330539, -141.346028), L.latLng(6.112637, -53.773761))
+                            //bounds: L.latLngBounds(L.latLng(69.330539, -141.346028), L.latLng(6.112637, -53.773761))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=NorthAmerica_30m_L1_v20170111&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=NorthAmerica_30m_L1_v20170203&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}
@@ -186,7 +188,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             bounds: L.latLngBounds(L.latLng(12.835778465638036, -81.95811941094321), L.latLng(-56.073447989999984, -31.449983235209473))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthAmerica_30m_L1_v20170105&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthAmerica_30m_L1_v20170131&band={band}'
                     },
                     legend: [
                         {label: 'Cropland', color: '#00FF00'}
@@ -202,7 +204,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
 //                            bounds: L.latLngBounds(L.latLng(12.835778465638036, -81.95811941094321), L.latLng(-56.073447989999984, -31.449983235209473))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthEastAsia_30m_L1_v20170120&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthEastAsia_30m_L1_v20170203&band={band}'
                     },
                     legend: [
                         {label: 'Cropland', color: '#00FF00'}
@@ -247,10 +249,11 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Croplands, irrigated, continuous, orchards ', color: '#00B050'},
                         {label: 'Croplands,  fallow ', color: '#FBD4B4'}
                     ],
-                    years: [2000,2001,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,2015]
+                    years: [2000,2001,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,2015],
+                    attribution: '<a href="http://dx.doi.org/10.1080/17538947.2016.1267269">Teluguntla et al., 2017</a>'
                 },
                 Europe_30m_L1_v20160725: {
-                    name: 'Europe 30m Cropland Extent Product 2014',
+                    name: 'Europe, Russia, Central Asia, and Middle East 30m Cropland Extent Product 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -258,7 +261,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             band: 'class',
                             subdomains: 'abc'
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/JustinPoehnelt/products&id=Europe_30m_L1_v20160725&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Europe_CentralAsia_30m_L1_v20170202&band={band}'
                     },
                     legend: [
                         {label: 'Cropland', color: '#00FF00'}
@@ -314,35 +317,19 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                 //     ]
                 // },
                 China_30m_L1_v20170119: {
-                    name: 'China 30m Cropland Extent Product Nominal 2014',
+                    name: 'China & Mongolia 30m Cropland Extent Product Nominal 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
                         options: {
                             band: 'class',
                             subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(59.394912, 62.978564), L.latLng(11.340300, 141.640666))
+                            //bounds: L.latLngBounds(L.latLng(59.394912, 62.978564), L.latLng(11.340300, 141.640666))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=China_30m_L1_v20170119&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=ChinaMongolia_30m_L1_v20170201&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}
-                    ]
-                },
-                MidEast_30m_L1_v20170121: {
-                    name: 'Middle East 30m Cropland Extent Product Nominal 2014',
-                    visible: true,
-                    type: 'xyz',
-                    params: {
-                        options: {
-                            band: 'class',
-                            subdomains: 'abc',
-                            bounds: L.latLngBounds(L.latLng(43.189358, 24.130906), L.latLng(8.744208, 72.558633))
-                        },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=MidEash_30m_L1_v20170123&band={band}'
-                    },
-                    legend: [
-                        {label: 'Croplands', color: '#000000'}
                     ]
                 },
                 Africa_250m_L2_v20160601: {
@@ -370,7 +357,8 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Rainfed, Continuous', color: '#ffff33'},
                         {label: 'Fallow-lands', color: '#e2e2e2'},
                         {label: 'Not Cropland', color: '#000000'}
-                    ]
+                    ],
+                    attribution: '<a href="https://geography.wr.usgs.gov/science/croplands/docs/Xiong-ACM2016.pdf">Xiong, J. et al., 2017</a>'
                 }
             }
         }

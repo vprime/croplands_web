@@ -118,10 +118,9 @@ app.controller("StreetController", ['$scope', 'mapService', 'mappings', '$http',
     };
 
     function initMap() {
-
         // Set the initial Street View camera to the center of the map
-        sv.getPanoramaByLocation({lat: 37.068888,
-            lng: -120.335047}, 50, processSVData);
+        sv.getPanoramaByLocation({lat: 14.461883,
+            lng: 99.477472 }, 50, processSVData);
 
         panorama.addListener('position_changed', function () {
             var position = panorama.getPosition();

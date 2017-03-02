@@ -1323,8 +1323,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Croplands, Rainfed minor fragments', color: '#00FFFF'},
                         {label: 'Croplands, Rainfed very minor fragments', color: '#D2B58C'}
                     ],
-                    attribution: '<a href="http://geography.wr.usgs.gov/science/croplands/docs/Teluguntla-thenkabail-xiong-etal-global-croplands-mask.pdf">Teluguntla et al., 2015</a>',
-                    // '<p><a href="http://e4ftl01.cr.usgs.gov/provisional/MEaSUREs/GFSAD/GFSADCM1KM/02-data/">Download Data on LPDAAC</a></p>',
+                    attribution: '<a href="http://geography.wr.usgs.gov/science/croplands/docs/Teluguntla-thenkabail-xiong-etal-global-croplands-mask.pdf">Teluguntla et al., 2015</a> <p><a href="https://lpdaac.usgs.gov/dataset_discovery/measures/measures_products_table/gfsad1kcm_v0011">Download Data</a></p>'
                 },
                 Global_1000m_L4_v20120101: {
                     name: 'Global GCE 1km Cropland Dominance and Other Products',
@@ -1348,8 +1347,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                         {label: 'Minor Fractions of Mixed Crops: Wheat, Maize, Rice, Barley, Soybeans', color: '#505012'},
                         {label: 'Other Classes', color: '#B2B2B2'}
                     ],
-                    attribution: '<a href="https://geography.wr.usgs.gov/science/croplands/docs/02-GLOBAL-CROPLANDS-PAPER-PE&RS-Special-Issue-thenkabail-2012-Final.pdf">Thenkabail et al., 2012</a>',
-                    // '<p><a href="http://e4ftl01.cr.usgs.gov/provisional/MEaSUREs/GFSAD/GFSADCD1KM/02-data/">Download Data on LPDAAC</a></p>',
+                    attribution: '<a href="https://geography.wr.usgs.gov/science/croplands/docs/02-GLOBAL-CROPLANDS-PAPER-PE&RS-Special-Issue-thenkabail-2012-Final.pdf">Thenkabail et al., 2012</a><p><a href="https://lpdaac.usgs.gov/dataset_discovery/measures/measures_products_table/gfsad1kcd_v001">Download Data</a></p>'
                 },
                 SouthAsia_250m_L4_v20151201: {
                     name: 'South Asia 250m Croplands 2010-2011 from ACCA',
@@ -2740,6 +2738,46 @@ app.controller("MapController", ['$scope', 'mapService', 'DataService', 'leaflet
 
 }])
 ;;
+/**
+ * Created by Corryn Smith on 2/22/2017.
+ */
+
+app.controller('MarkersSimpleController', [ '$scope', function($scope) {
+            var mainMarker = {
+                lat: 0,
+                lng: 0,
+                focus: true,
+                message: "Hey, drag me if you want",
+                draggable: true
+            };
+
+            angular.extend($scope, {
+                world: {
+                    lat: 0,
+                    lng: 0,
+                    zoom: 1
+                },
+                markers: {
+                    mainMarker: angular.copy(mainMarker)
+                },
+                position: {
+                    lat: 0,
+                    lng: 0
+                },
+                events: { // or just {} //all events
+                    markers:{
+                      enable: [ 'dragend' ]
+                      //logic: 'emit'
+                    }
+                }
+            });
+
+            $scope.$on("leafletDirectiveMarker.dragend", function(event, args){
+                $scope.position.lat = args.model.lat;
+                $scope.position.lng = args.model.lng;
+            });
+
+        } ]);;
 app.controller("NavbarController", ['$scope', 'User', '$location', function ($scope, User, $location) {
     $scope.goToLogin = function () {
         var n = encodeURIComponent(window.btoa(JSON.stringify({
@@ -2946,7 +2984,8 @@ app.controller("StreetController", ['$scope', 'mapService', 'mappings', '$http',
 
     initMap();
 
-}]);;
+}]);
+;
 app.controller("ConfirmController", ['$scope', 'log', function ($scope, log) {
 }]);;
 app.controller("ForgotController", ['$scope', 'User', function ($scope, User) {

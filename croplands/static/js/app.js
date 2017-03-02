@@ -2801,7 +2801,7 @@ app.controller("NavbarController", ['$scope', 'User', '$location', function ($sc
         $location.path('/app/a/logout').search({n: n});
     };
 }]);;
-aapp.controller("StreetController", ['$scope', 'mapService', 'mappings', '$http', 'leafletData', '$document', 'log', 'geoHelperService', 'server', '$timeout', function ($scope, mapService, mappings, $http, leafletData, $document, log, geoHelperService, server, $timeout) {
+app.controller("StreetController", ['$scope', 'mapService', 'mappings', '$http', 'leafletData', '$document', 'log', 'geoHelperService', 'server', '$timeout', function ($scope, mapService, mappings, $http, leafletData, $document, log, geoHelperService, server, $timeout) {
     var sv = new google.maps.StreetViewService(),
         panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), {
             addressControl: false,

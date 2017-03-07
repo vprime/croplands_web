@@ -1529,6 +1529,22 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
 
                 },
+                UKIreland_30m_L1_v20170307: {
+                    name: 'UK & Ireland 30m Cropland Extent Product 2014',
+                    visible: false,
+                    type: 'xyz',
+                    params: {
+                        options: {
+                            band: 'class',
+                            subdomains: 'abc'
+                        },
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=UKIreland_30m_L1_v20170307&band={band}'
+                    },
+                    legend: [
+                        {label: 'Cropland', color: '#00FF00'}
+                    ]
+
+                },
                 Africa_30m_L1_v20161110: {
                     name: 'Africa 30m Cropland Extent Product 2015',
                     visible: true,

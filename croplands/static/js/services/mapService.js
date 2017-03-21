@@ -132,7 +132,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             //bounds: L.latLngBounds(L.latLng(37.0985, 60.895), L.latLng(6.006, 97.416))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthAsia_30m_L1_v20170202&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=SouthAsia_30m_L1_v20170320&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}
@@ -275,7 +275,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             band: 'class',
                             subdomains: 'abc'
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=UKIreland_30m_L1_v20170307&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=UKIreland_30m_L1_v20170314&band={band}'
                     },
                     legend: [
                         {label: 'Cropland', color: '#00FF00'}

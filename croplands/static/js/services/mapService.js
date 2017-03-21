@@ -275,7 +275,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             band: 'class',
                             subdomains: 'abc'
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=UKIreland_30m_L1_v20170307&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=UKIreland_30m_L1_v20170314&band={band}'
                     },
                     legend: [
                         {label: 'Cropland', color: '#00FF00'}

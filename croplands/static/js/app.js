@@ -1529,8 +1529,8 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
 
                 },
-                UKIreland_30m_L1_v20170307: {
-                    name: 'UK & Ireland 30m Cropland Extent Product 2014',
+                Europe_30m_L1_v20170403: {
+                    name: 'Europe 30m Cropland Extent Product 2014',
                     visible: false,
                     type: 'xyz',
                     params: {
@@ -1538,13 +1538,29 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             band: 'class',
                             subdomains: 'abc'
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=UKIreland_30m_L1_v20170314&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Europe_30m_L1_v20170401&band={band}'
                     },
                     legend: [
                         {label: 'Cropland', color: '#00FF00'}
                     ]
 
                 },
+                // UKIreland_30m_L1_v20170307: {
+                //     name: 'UK & Ireland 30m Cropland Extent Product 2014',
+                //     visible: false,
+                //     type: 'xyz',
+                //     params: {
+                //         options: {
+                //             band: 'class',
+                //             subdomains: 'abc'
+                //         },
+                //         url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=UKIreland_30m_L1_v20170314&band={band}'
+                //     },
+                //     legend: [
+                //         {label: 'Cropland', color: '#00FF00'}
+                //     ]
+                //
+                // },
                 Africa_30m_L1_v20161110: {
                     name: 'Africa 30m Cropland Extent Product 2015',
                     visible: true,
@@ -2770,46 +2786,6 @@ app.controller("MapController", ['$scope', 'mapService', 'DataService', 'leaflet
 
 }])
 ;;
-/**
- * Created by Corryn Smith on 2/22/2017.
- */
-
-app.controller('MarkersSimpleController', [ '$scope', function($scope) {
-            var mainMarker = {
-                lat: 0,
-                lng: 0,
-                focus: true,
-                message: "Hey, drag me if you want",
-                draggable: true
-            };
-
-            angular.extend($scope, {
-                world: {
-                    lat: 0,
-                    lng: 0,
-                    zoom: 1
-                },
-                markers: {
-                    mainMarker: angular.copy(mainMarker)
-                },
-                position: {
-                    lat: 0,
-                    lng: 0
-                },
-                events: { // or just {} //all events
-                    markers:{
-                      enable: [ 'dragend' ]
-                      //logic: 'emit'
-                    }
-                }
-            });
-
-            $scope.$on("leafletDirectiveMarker.dragend", function(event, args){
-                $scope.position.lat = args.model.lat;
-                $scope.position.lng = args.model.lng;
-            });
-
-        } ]);;
 app.controller("NavbarController", ['$scope', 'User', '$location', function ($scope, User, $location) {
     $scope.goToLogin = function () {
         var n = encodeURIComponent(window.btoa(JSON.stringify({

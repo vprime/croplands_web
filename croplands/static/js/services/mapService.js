@@ -276,7 +276,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             bounds: L.latLngBounds(L.latLng(37.3494, -25.3695), L.latLng(-34.83026000000001, 63.50536000000001))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Africa_30m_L1_v20170403_1&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Africa_30m_L1_v20170404_1&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}

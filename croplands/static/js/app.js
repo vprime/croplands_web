@@ -1386,7 +1386,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 SouthAsia_30m_L1_v20161215: {
-                    name: 'South Asia 30m Cropland Extent Product 2014',
+                    name: 'South Asia Nominal 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1402,7 +1402,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 NorthAmerica_30m_L1_v20170109: {
-                    name: 'North America 30m Cropland Extent Product Nominal 2010',
+                    name: 'North America Nominal 2010',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1440,7 +1440,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 SouthAmerica_30m_L1_v20160101: {
-                    name: 'South America 30m Cropland Extent Product 2013-2016',
+                    name: 'South America Product 2013-2016',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1456,7 +1456,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 SouthEastAsia_30m_L1_v20160808: {
-                    name: 'South East Asia 30m Cropland Extent Product 2014',
+                    name: 'South East Asia Product 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1472,7 +1472,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 Australia_30m_L1_v20161125: {
-                    name: 'Australia & New Zealand 30m Cropland Extent Nominal 2014',
+                    name: 'Australia & New Zealand Nominal 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1514,7 +1514,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     attribution: '<a href="http://dx.doi.org/10.1080/17538947.2016.1267269">Teluguntla et al., 2017</a>'
                 },
                 Europe_30m_L1_v20160725: {
-                    name: 'Europe, Russia, Central Asia, and Middle East 30m Cropland Extent Product 2014',
+                    name: 'Europe, Russia, Central Asia & Middle East Product 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1530,7 +1530,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
 
                 },
                 Africa_30m_L1_v20161110: {
-                    name: 'Africa 30m Cropland Extent Product 2015',
+                    name: 'Africa Product 2015',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1546,7 +1546,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                     ]
                 },
                 China_30m_L1_v20170119: {
-                    name: 'China 30m Cropland Extent Product Nominal 2014',
+                    name: 'China Product Nominal 2014',
                     visible: true,
                     type: 'xyz',
                     params: {
@@ -1555,14 +1555,14 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             //bounds: L.latLngBounds(L.latLng(59.394912, 62.978564), L.latLng(11.340300, 141.640666))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=China_30m_L1_v20170320&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=China_30m_L1_v20170404&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}
                     ]
                 },
                 Mongolia_30m_L1_v20170201: {
-                    name: 'Mongolia 30m Cropland Extent Product Nominal 2014',
+                    name: 'Mongolia Product Nominal 2014',
                     visible: true,
                     type: 'xyz',
                     params: {

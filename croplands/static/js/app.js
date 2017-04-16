@@ -1411,7 +1411,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             //bounds: L.latLngBounds(L.latLng(69.330539, -141.346028), L.latLng(6.112637, -53.773761))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=NorthAmerica_30m_L1_v20170203&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=NorthAmerica_30m_L1_v20170415&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}

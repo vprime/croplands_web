@@ -1571,7 +1571,7 @@ app.factory('mapService', ['leafletLayers', function (leafletLayers) {
                             subdomains: 'abc',
                             //bounds: L.latLngBounds(L.latLng(59.394912, 62.978564), L.latLng(11.340300, 141.640666))
                         },
-                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Mongolia_30m_L1_v20170201&band={band}'
+                        url: '//{s}.tiles.croplands.org/{z}/{x}/{y}/tile.png?collection=users/croplandsdev/products&id=Mongolia_30m_L1_v20170415&band={band}'
                     },
                     legend: [
                         {label: 'Croplands', color: '#00FF00'}

@@ -42,11 +42,8 @@ app.controller("MapController", ['$scope', 'mapService', 'DataService', 'leaflet
         return mapService.center;
     }, function (center) {
         $scope.center = center;
+        $scope.setCenterLocation();
     }, true);
-
-//    $scope.$watch('center', function (center) {
-//        $location.moveCenter(center.lat, center.lng, center.zoom);
-//    });
 
     $scope.$watch('busy', function () {
         if ($scope.busy) {
@@ -76,6 +73,14 @@ app.controller("MapController", ['$scope', 'mapService', 'DataService', 'leaflet
     $scope.print = function () {
         window.print();
     };
+
+    // Updates the URL for the current view
+    $scope.setCenterLocation = function () {
+      var lat = mapService.center.lat;
+      var lng = mapService.center.lng;
+      var zoom = mapService.center.zoom;
+      $location.moveCenter(lat, lng, zoom);
+    }
 
 
 //////////
